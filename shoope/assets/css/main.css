@@ -1,0 +1,195 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 6px;
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 200;
+
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header__navbar-item--bold {
+    font-weight: bold;
+}
+
+.header__navbar-item-has-qr:hover .header__qr {
+    display: block;
+}
+
+.header__navbar-item--line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid rgb(237, 162, 162);
+    height: 16px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+
+}
+
+.header__navbar-icon--link {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon {
+    margin: 0 4px;
+}
+
+.header__navbar-title-disable {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/* QR CODE */
+.header__qr {
+    background-color: var(--white-color);
+    width: 150px;
+    position: absolute;
+    left: 0;
+    top: 150%;
+    padding: 7px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+
+}
+
+.header__qr::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: -6px;
+
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__apps-link:first-child {
+    margin-left: 7px;
+}
+
+.header__apps-link:nth-child(2) {
+    margin-right: 8px;
+}
+
+.header__qr-dowload {
+    height: 12px;
+}
+
+/* Thông báo */
+.header__notify {
+    position: absolute;
+    top: 170%;
+    right: 0;
+    width: 300px;
+    background-color: var(--white-color);
+    border: 1px solid #D3D3D3;
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+    font-weight: 200px;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+.header__notify-header h3 {
+    margin: 0 0 0 12px;
+    color: #666;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item {}
+
+.header__notify-item:hover {
+    background-color: #f7f7ff;
+}
+
+.header__notify-item-readed {
+    background: rgba(238, 77, 45, 0.1);
+
+}
+
+.header__notify-link {
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.header__notify-img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.header__notify-info {
+    margin-left: 12px;
+}
+
+.header__notify-name {
+    display: block;
+    font-size: 14px;
+    color: var(--black-color);
+}
+
+.header__notify-desc {
+    font-size: 10px;
+    color: #333;
+
+}
+
+.header__notify-footer {
+    text-align: center;
+}
+
+.header__notify-btn {
+    text-decoration: none;
+
+    padding: 4px 16px;
+}
