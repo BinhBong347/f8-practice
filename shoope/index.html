@@ -1,112 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css"
+        />
+        <title>Shopee</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
-    <title>Shopee</title>
-</head>
-
-<body>
-    <div id="app">
-        <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--line header__navbar-item-has-qr ">
-                            Vào cửa hàng trên ứng dụng
-                            <div class="header__qr">
-                                <img src="./assets/img/qrcode.png" alt="QR Code" class="header__qr-img">
-                                <div class="header__qr-apps">
-                                    <a href="#" class="header__apps-link">
-                                        <img src="./assets/img/app_store.png" alt="App Store"
-                                            class="header__qr-dowload">
-                                    </a>
-                                    <a href="#" class="header__apps-link">
-                                        <img src="./assets/img/gg_play.png" alt="GG Play" class="header__qr-dowload">
-                                    </a>
+    <body>
+        <div id="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li
+                                class="header__navbar-item header__navbar-item--line header__navbar-item-has-qr"
+                            >
+                                Vào cửa hàng trên ứng dụng
+                                <div class="header__qr">
+                                    <img
+                                        src="./assets/img/qrcode.png"
+                                        alt="QR Code"
+                                        class="header__qr-img"
+                                    />
+                                    <div class="header__qr-apps">
+                                        <a href="#" class="header__apps-link">
+                                            <img
+                                                src="./assets/img/app_store.png"
+                                                alt="App Store"
+                                                class="header__qr-dowload"
+                                            />
+                                        </a>
+                                        <a href="#" class="header__apps-link">
+                                            <img
+                                                src="./assets/img/gg_play.png"
+                                                alt="GG Play"
+                                                class="header__qr-dowload"
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <span class="header__navbar-title-disable"
+                                    >Kết nối</span
+                                >
+                                <a href="#" class="header__navbar-icon--link">
+                                    <i
+                                        class="header__navbar-icon fa-brands fa-facebook"
+                                    ></i>
+                                </a>
+                                <a href="#" class="header__navbar-icon--link">
+                                    <i
+                                        class="header__navbar-icon fa-brands fa-instagram"
+                                    ></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header__navbar-list">
+                            <li
+                                class="header__navbar-item header__navbar-item-hasNotify"
+                            >
+                                <a href="#" class="header__navbar-item-link">
+                                    <i
+                                        class="header__navbar-icon fa-solid fa-bell"
+                                    ></i>
+                                    Thông báo</a
+                                >
+                                <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <h3>Thông báo người nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li
+                                            class="header__notify-item header__notify-item-readed"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="header__notify-link"
+                                            >
+                                                <img
+                                                    src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
+                                                    alt="Notif"
+                                                    class="header__notify-img"
+                                                />
+                                                <div
+                                                    class="header__notify-info"
+                                                >
+                                                    <span
+                                                        class="header__notify-name"
+                                                        >Mỹ phẩm Ohui chính hãng
+                                                        đến từ ngoại quốc</span
+                                                    >
+                                                    <span
+                                                        class="header__notify-desc"
+                                                        >Sản phẩm được phân phối
+                                                        chính hãng từ cửa
+                                                        hàng</span
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="header__notify-item header__notify-item-readed"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="header__notify-link"
+                                            >
+                                                <img
+                                                    src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
+                                                    alt="Notif"
+                                                    class="header__notify-img"
+                                                />
+                                                <div
+                                                    class="header__notify-info"
+                                                >
+                                                    <span
+                                                        class="header__notify-name"
+                                                        >Mỹ phẩm Ohui chính
+                                                        hãng</span
+                                                    >
+                                                    <span
+                                                        class="header__notify-desc"
+                                                        >Mô tả mỹ phẩm Ohui
+                                                        chính hãng</span
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="header__notify-item header__notify-item-readed"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="header__notify-link"
+                                            >
+                                                <img
+                                                    src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
+                                                    alt="Notif"
+                                                    class="header__notify-img"
+                                                />
+                                                <div
+                                                    class="header__notify-info"
+                                                >
+                                                    <span
+                                                        class="header__notify-name"
+                                                        >Mỹ phẩm Ohui chính
+                                                        hãng</span
+                                                    >
+                                                    <span
+                                                        class="header__notify-desc"
+                                                        >Mô tả mỹ phẩm Ohui
+                                                        chính hãng</span
+                                                    >
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="#" class="header__notify-btn">
+                                            Xem tất cả
+                                        </a>
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="#" class="header__navbar-item-link">
+                                    <i
+                                        class="header__navbar-icon fa-solid fa-question"
+                                    ></i>
+                                    Trợ giúp</a
+                                >
+                            </li>
+                            <li
+                                class="header__navbar-item header__navbar-item--bold header__navbar-item--line"
+                            >
+                                Đăng ký
+                            </li>
+                            <li
+                                class="header__navbar-item header__navbar-item--bold"
+                            >
+                                Đăng nhập
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="container"></div>
+            <footer class="footer"></footer>
+        </div>
+        <!-- modal -->
+        <!-- <div class="modal"> -->
+        <!-- <div class="modal__overlay"></div> -->
+        <!-- <div class="modal__body"> -->
+        <!-- ĐĂNG KÝ -->
+        <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form_header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input
+                                    type="text"
+                                    class="auth-form__input"
+                                    placeholder="Nhập email của bạn"
+                                />
                             </div>
-                        </li>
-                        <li class="header__navbar-item">
-                            <span class="header__navbar-title-disable">Kết nối</span>
-                            <a href="#" class="header__navbar-icon--link">
-                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="#" class="header__navbar-icon--link">
-                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-item-link">
-                                <i class="header__navbar-icon fa-solid fa-bell"></i>
-                                Thông báo</a>
-                            <div class="header__notify">
-                                <header class="header__notify-header">
-                                    <h3>Thông báo người nhận</h3>
-                                </header>
-                                <ul class="header__notify-list">
-                                    <li class="header__notify-item header__notify-item-readed">
-                                        <a href="#" class="header__notify-link">
-                                            <img src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
-                                                alt="Notif" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng đến từ ngoại
-                                                    quốc</span>
-                                                <span class="header__notify-desc">Sản phẩm được phân phối chính hãng từ
-                                                    cửa hàng</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify-item header__notify-item-readed">
-                                        <a href="#" class="header__notify-link">
-                                            <img src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
-                                                alt="Notif" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
-                                                <span class="header__notify-desc">Mô tả mỹ phẩm Ohui chính hãng</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify-item header__notify-item-readed">
-                                        <a href="#" class="header__notify-link">
-                                            <img src="https://data.webnhiepanh.com/wp-content/uploads/2020/11/21105453/phong-canh-1.jpg"
-                                                alt="Notif" class="header__notify-img">
-                                            <div class="header__notify-info">
-                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
-                                                <span class="header__notify-desc">Mô tả mỹ phẩm Ohui chính hãng</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <footer class="header__notify-footer">
-                                    <a href="#" class="header__notify-btn">
-                                        Xem tất cả
-                                    </a>
-                                </footer>
+                            <div class="auth-form__group">
+                                <input
+                                    type="number"
+                                    class="auth-form__input"
+                                    placeholder="Nhập mật khẩu"
+                                />
                             </div>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-item-link">
-                                <i class="header__navbar-icon fa-solid fa-question"></i>
-                                Trợ giúp</a>
-                        </li>
-                        <li class="header__navbar-item header__navbar-item--bold header__navbar-item--line">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--bold">Đăng nhập</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="container"></div>
-        <footer class="footer"></footer>
-    </div>
-</body>
-
+                            <div class="auth-form__group">
+                                <input
+                                    type="number"
+                                    class="auth-form__input"
+                                    placeholder="Nhập lại mật khẩu"
+                                />
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đồng ý với
+                                <a href="#" class="auth-form__text-link"
+                                    >các điều khoản</a
+                                >
+                                &
+                                <a href="#" class="auth-form__text-link"
+                                    >chính sách bảo mật</a
+                                >
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button
+                                class="btn auth-form__controls-back btn--normal"
+                            >
+                                Trở lại
+                            </button>
+                            <button class="btn btn--primary">Đăng ký</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a
+                            href="#"
+                            class="auth-form__socials--facebook btn btn--size-s btn-with-icon"
+                        >
+                            <i
+                                class="auth-form__socials-icon fab fa-facebook-square"
+                            ></i>
+                            <span class="auth-form__socials-label"
+                                >Kết nối với Facebook</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="auth-form__socials--google btn btn--size-s btn-with-icon"
+                        >
+                            <i
+                                class="iconGoogle auth-form__socials-icon fab fa-google"
+                            ></i>
+                            <span class="auth-form__socials-label"
+                                >Kết nối với Google</span
+                            >
+                        </a>
+                    </div>
+                </div> -->
+        <!-- ĐĂNG NHẬP -->
+        <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form_header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input
+                                    type="text"
+                                    class="auth-form__input"
+                                    placeholder="Nhập email của bạn"
+                                />
+                            </div>
+                            <div class="auth-form__group">
+                                <input
+                                    type="number"
+                                    class="auth-form__input"
+                                    placeholder="Nhập mật khẩu"
+                                />
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a
+                                    href=""
+                                    class="auth-form__help-link auth-form__help-fogot"
+                                    >Quên mật khẩu</a
+                                >
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link"
+                                    >Cần trợ giúp?</a
+                                >
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button
+                                class="btn auth-form__controls-back btn--normal"
+                            >
+                                Trở lại
+                            </button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a
+                            href="#"
+                            class="auth-form__socials--facebook btn btn--size-s btn-with-icon"
+                        >
+                            <i
+                                class="auth-form__socials-icon fab fa-facebook-square"
+                            ></i>
+                            <span class="auth-form__socials-label"
+                                >Kết nối với Facebook</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="auth-form__socials--google btn btn--size-s btn-with-icon"
+                        >
+                            <i
+                                class="iconGoogle auth-form__socials-icon fab fa-google"
+                            ></i>
+                            <span class="auth-form__socials-label"
+                                >Kết nối với Google</span
+                            >
+                        </a>
+                    </div>
+                </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </body>
 </html>
