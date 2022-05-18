@@ -11,7 +11,7 @@
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
-    margin-top: 6px;
+    margin-top: 17px;
 }
 
 .header__navbar-item {
@@ -341,4 +341,27 @@ cursor: pointer;
 .auth-form__socials--google {
     background-color: var(--white-color);
     color: #666;
+}
+
+.iconGoogle{color: red;}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.auth-form__help-separate{
+    display: block;
+    border-left: 1px solid var(--border-color);
+    margin: 0 16px;
+    height: 20px;
+}
+
+.auth-form__help-fogot {
+    color: var(--primary-color);
 }
